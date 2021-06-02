@@ -1,15 +1,7 @@
-const mysql = require('mysql');
 const inquirer = require('inquirer');
 const { promisify } = require('util');
 const cTable = require('console.table');
-
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3306,
-    user: 'root',
-    password: '', // add password to database
-    database: 'employees_example_db',
-});
+const { connection } = require('./config/connection');
 
 connection.connect((error) => {
     if (error) throw error;
