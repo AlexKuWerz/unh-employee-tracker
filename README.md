@@ -16,7 +16,7 @@ The application used MySQL database. You can found a [schema.sql](./db/schema.sq
 
 ![Database Schema](./res/schema.jpg)
 
-You should add configuration data about your database connection in [index.js](./index.js) file:
+You should add configuration data about your database connection in [connection.js](./config/connection.js) config file:
 
 ![Database Connection configuration data](./res/connection-config.jpg)
 
